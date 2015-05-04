@@ -43,6 +43,6 @@ group :development, :test do
   gem 'spring'
 
   # Expose unit testing
-  gem rspec
+  gem 'rspec'
 end
 
