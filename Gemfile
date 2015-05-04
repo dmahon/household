@@ -43,6 +43,11 @@ group :development, :test do
   gem 'spring'
 
   # Expose unit testing
-  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
+group :test do
+  gem 'faker'
+  gem 'capybara-webkit'
+end
