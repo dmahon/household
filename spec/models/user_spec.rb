@@ -23,4 +23,12 @@ RSpec.describe User, type: :model do
     @user.password = nil
     expect(@user).to be_invalid
   end
+
+  it "has a unique email address" do
+    @user1 = create(:user)
+    @user2 = build(:user)
+    @user2.email = @user1.email
+
+    expect(@user2).to be_invalid
+  end
 end
