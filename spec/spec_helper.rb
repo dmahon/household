@@ -92,4 +92,6 @@ RSpec.configure do |config|
 
   # Expose FactoryGirl methods while testing
   config.include FactoryGirl::Syntax::Methods
+
+  config.include Capybara::DSL
 end
